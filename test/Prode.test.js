@@ -15,7 +15,9 @@ describe('Prode', () => {
         await this.prodeContract.crearPartido('1668553617');
 
         const miPartido = await this.prodeContract.leerPartido(0, {from: admin});
-        miPartido.map((item, i) => console.log(item.toNumber()))
+        console.log('Resultados partido:');
+        miPartido.map((item, i) => console.log(item.toNumber()));
+
 
     })
 })
